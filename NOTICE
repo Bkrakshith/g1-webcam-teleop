@@ -1,0 +1,28 @@
+g1-webcam-teleop
+Copyright 2026 Bkrakshith (https://github.com/Bkrakshith)
+
+g1-webcam-teleop is part of hospital-sim (https://github.com/Bkrakshith/hospital-sim), created by Bkrakshith.
+
+This work is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Attribution. Section 4 of the licence requires that any redistribution or derivative work keeps this
+NOTICE file and shows its attribution. If you use this work or build on it, give this credit in your
+documentation, in the credits of your product, and in your source distribution:
+
+    Based on hospital-sim by Bkrakshith (https://github.com/Bkrakshith/hospital-sim)
+
+If you use this work in a publication, cite it with the details in CITATION.cff.
+
+Third-party components
+
+The parts below are not covered by the copyright above and keep their own licences.
+
+- xr_teleoperate is a git submodule of a fork of unitreerobotics/xr_teleoperate, Apache-2.0, Copyright 2025
+  Unitree Robotics. The changes on the hospital-g1-webcam branch are by Bkrakshith (https://github.com/Bkrakshith).
+
+- obsbot/obsbot-camera-control is a git submodule of a fork of aaronsb/obsbot-camera-control, MIT,
+  Copyright (c) 2025 Aaron Bockelie. It includes the OBSBOT SDK libraries under OBSBOT's terms.
+
+- third_party/unitree_sdk2_python is a git submodule of unitreerobotics/unitree_sdk2_python, BSD-3-Clause.
+
+- The MediaPipe models that run_webcam_teleop.sh downloads are Apache-2.0, Google.

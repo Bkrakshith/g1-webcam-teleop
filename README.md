@@ -444,3 +444,12 @@ yaw-then-pitch crop model). The estimate uses the commanded-angle model, not a m
   always 0.
 - CPU load: about 27 fps with nobody in view, and 20 to 25 fps with a pose and two hands. The latency is 25 to
   55 ms from capture to target.
+
+## License
+
+The license of this repository is the Apache License, Version 2.0 (see `LICENSE`).
+You can use, change and share this work, also for commercial use.
+If you share this work or a work that you built on it, keep the `NOTICE` file.
+Give this credit in your documentation and product credits: "Based on hospital-sim by Bkrakshith (https://github.com/Bkrakshith/hospital-sim)".
+To cite this work in a publication, use `CITATION.cff`.
+Some third-party parts keep their own licences. The `NOTICE` file lists them.
