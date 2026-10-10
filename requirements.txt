@@ -1,0 +1,31 @@
+# g1-webcam-teleop: direct Python dependencies, pinned to the shared .venv (venv_local.txt, 2026-10-10).
+# Install order matters; follow README.md "Install". Summary:
+#   .venv/bin/pip install -c <numpy==1.26.4 constraint> torch==2.3.0 --index-url https://download.pytorch.org/whl/cpu
+#   .venv/bin/pip install -c <constraint> -r g1-webcam-teleop/requirements.txt
+#   then the pinocchio wheel, the editable installs and (DDS path only) unitree_sdk2py, as in the README.
+#
+# Not listed here, installed by the README steps:
+#   pin==3.9.0 (pinocchio) and its cmeel-* / eigenpy wheels: pip resolves them to numpy>=2, so they are
+#       downloaded with `pip download pin==3.9.0` and installed with --no-deps (minus the numpy wheel)
+#   cmeel-urdfdom==4.0.1, cmeel-tinyxml2==10.0.0 (--no-deps; the resolver picks too-new ones)
+#   dex_retargeting==0.4.7: editable, `pip install --no-deps -e xr_teleoperate/teleop/robot_control/dex-retargeting`
+#   unitree_sdk2py==1.0.1: editable, `pip install --no-deps -e third_party/unitree_sdk2_python` (DDS path only)
+#   cyclonedds==0.10.2: `CYCLONEDDS_HOME=/opt/ros/humble pip install cyclonedds==0.10.2` (DDS path only)
+# From ROS 2 Humble apt (system site-packages, not pip): rclpy, sensor_msgs, std_msgs; g1_interfaces from ros2_ws.
+# From Ubuntu apt: pytest 6.2.5 (python3-pytest) for the unit tests.
+# torch==2.3.0+cpu is installed first from the PyTorch CPU index (see above), not from PyPI.
+
+numpy==1.26.4
+mediapipe==1.0.1
+opencv-contrib-python==4.10.0.84
+casadi==3.8.1
+meshcat==0.3.2
+logging-mp==0.2.5
+sshkeyboard==2.3.1
+# dex-retargeting runtime dependencies (its pyproject pins torch==2.3.0, nlopt<2.8, numpy<2)
+nlopt==2.7.1
+pytransform3d==3.16.0
+trimesh==5.1.0
+anytree==2.13.0
+lxml==6.1.3
+PyYAML==6.0.3
